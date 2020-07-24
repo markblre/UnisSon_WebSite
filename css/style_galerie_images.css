@@ -1,0 +1,18 @@
+.bg-black {
+    background-color: black;
+}
+
+h6.filter {
+    font-size: 1.3em;
+}
+
+.img-size-resp, .video-size-resp {
+    max-width: 100%;
+    height: auto;
+}
+
+.btn-light:not(:disabled):not(.disabled).filterActive {
+    color: #212529;
+    background-color: #dae0e5;
+    border-color: #d3d9df;
+}

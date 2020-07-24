@@ -1,0 +1,21 @@
+.content-to-sort {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.btn-light:not(:disabled):not(.disabled) {
+    color: white;
+    font-size: 1.3em;
+    background-color: #505050;
+    border-color: #b2b2b2;
+}
+
+.btn-light:not(:disabled):not(.disabled).active {
+    color: black;
+    font-size: 1.3em;
+    background-color: white;
+    border-color: white;
+}

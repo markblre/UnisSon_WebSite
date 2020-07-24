@@ -1,0 +1,29 @@
+.bg-black {
+    background-color: black;
+}
+
+figcaption {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.4em;
+}
+
+.legend-sound {
+    color: white;
+    font-size: 0.85em;
+}
+
+.div-bar {
+    width: 80%;
+    height: 3px;
+}
+
+h6.filter {
+    font-size: 1.3em;
+}
+
+.btn-light:not(:disabled):not(.disabled).filterActive {
+    color: #212529;
+    background-color: #dae0e5;
+    border-color: #d3d9df;
+}

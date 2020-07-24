@@ -1,0 +1,46 @@
+.bg-logoNB {
+    background-image: url(../images/logo/logoNB.svg);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 23em;
+    padding-top: 0.5em;
+    padding-bottom: 3.1em;
+    background-position: top 57px right 15%;
+}
+
+.bg-black {
+    background-color: black;
+}
+
+.img-size-resp {
+    max-width: 100%;
+    height: auto;
+}
+
+.video-size-resp {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (min-width: 992px) {
+    .img-size-resp-lg{
+        max-width: 50%;
+        height: auto;
+    }
+}
+
+figcaption {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.4em;
+}
+
+.legend-sound {
+    color: white;
+    font-size: 0.85em;
+}
+
+.div-bar {
+    width: 80%;
+    height: 3px;
+}

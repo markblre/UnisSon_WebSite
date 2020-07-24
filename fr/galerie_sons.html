@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css2?family=Squada+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Balthazar&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    
+    <link href="../dist/app.css" rel="stylesheet">
+    
+    <link href="../css/style.css" rel="stylesheet" type="text/css">
+    <link href="../sortModule/style_sort.css" rel="stylesheet" type="text/css">
+    <link href="../css/style_galerie_sons.css" rel="stylesheet" type="text/css">
+
+    <title>Sons - Unis-son (FR)</title>
+    <meta name="description" content="Découvrez sur cette page des réalisations audios de l'entreprise Unis-son." />
+</head>
+
+<body>
+    <nav class="row mr-0">
+        <a class="col-xl-4 col-lg-5 col-md-7 col-sm-9 col-13 text-center pr-0" href="../index.html">
+            <img src="../images/logo/logo.svg" width="75" height="75" alt="logo" class="logo">
+        </a>
+        <div class="navbar navbar-expand-lg bg-primary col-xl-46 col-lg-45 col-md-43 col-sm-41 col-37">
+            <div></div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sonorisation.html">Sonorisation d'évènements</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="enregistrement.html">Enregistrements</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="arrangement_postproduction.html">Arrangements / Postproduction</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="etudes_acoustiques.html">Études acoustiques / design sonore</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="formation.html">Formations</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Galeries
+                        </a>
+                        <div class="dropdown-menu bg-primary" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="galerie_photos_videos.html">Photos / Vidéos</a>
+                            <a class="dropdown-item active" href="#">Sons</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.php">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+
+    <main class="main">
+        <div class="container text-center mb-3">
+            <h1 class="mt-4">Galerie - sons</h1>
+            <p class="mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin id feugiat turpis, sit amet mattis justo. Phasellus nec nulla id nibh tristique elementum sit amet ac nunc. Cras lacinia mollis odio quis rhoncus. Sed ligula eros, pretium non justo vel, ullamcorper venenatis urna. Vivamus eget ultricies neque. Ut placerat lorem quis efficitur auctor. Vivamus in molestie neque, ut lacinia lectus.</p>
+        </div>
+        
+        <div class="bg-black pt-3">
+            <div class="container">
+                <h6 class="filter mb-3">Filtres :</h6>
+                <div id="myBtnContainer" class="mb-5 mr-1 ml-1 d-flex justify-content-around row">
+                    <button class="btnSort col-lg-7 mb-3 btn-light btn-lg shadow-lg rounded-pill filterActive" onclick="filterSelection('all')">Voir tout</button>
+                    <button class="btnSort col-lg-8 mb-3 btn-light btn-lg shadow-lg rounded-pill" onclick="filterSelection('sonorisation')">Sonorisation</button>
+                    <button class="btnSort col-lg-10 mb-3 btn-light btn-lg shadow-lg rounded-pill" onclick="filterSelection('enregistrement')">Enregistrement</button>
+                    <button class="btnSort col-lg-11 mb-3 btn-light btn-lg shadow-lg rounded-pill" onclick="filterSelection('arrangement')">Arrangements</button>
+                    <button class="btnSort col-lg-11 mb-3 btn-light btn-lg shadow-lg rounded-pill" onclick="filterSelection('postproduction')">Postproduction</button>
+                </div>
+
+                <div class="row justify-content-around">
+                    <!-- début de la galerie -->
+
+                    <!--
+                    <div class="col-50 pb-4 content-to-sort sonorisation enregistrement arrangement postproduction">
+                        <figure class="row justify-content-between mb-1 pr-5">
+                            <figcaption class="text-left pb-2">Lorem ipsum:</figcaption>
+                            <p class="text-right mb-0 pt-3">10/02/2017</p>
+                        </figure>
+                        <audio controls class="col-50 mb-2">
+                            <source src="../galeries/sons/ " type="audio/mpeg">
+                            <p>Votre navigateur ne prend pas en charge l'audio HTML. Voici un
+                             un <a href="../galeries/sons/ ">lien vers le fichier audio</a> pour le 
+                             télécharger.</p>
+                        </audio>
+                        <div class="row justify-content-around pb-3">
+                            <div class="col-50 col-md-25 pb-3 pl-5">
+                                <h6 class="mb-1">Travail effectué sur le morceau</h6>
+                                <p class="pl-5 m-0 legend-sound">Sonorisation</p>
+                            </div>
+                            <div class="col-50 col-md-25 pl-5">
+                                <h6 class="mb-1">Artiste</h6>
+                                <p class="pl-5 m-0 legend-sound">Sebastien</p>
+                            </div>
+                        </div>
+                        <div class="row d-flex justify-content-center pt-3">
+                            <img src="../tools/ligne_blanche.png" alt=" " class="div-bar">
+                        </div>
+                    </div>
+                    -->
+                    <div class="col-50 pb-4 content-to-sort sonorisation">
+                        <figure class="row justify-content-between mb-1 pr-5">
+                            <figcaption class="text-left pb-2">Lorem ipsum:</figcaption>
+                            <p class="text-right mb-0 pt-3">10/02/2017</p>
+                        </figure>
+                        <audio controls class="col-50 mb-2">
+                            <source src="../galeries/sons/batterie.mp3" type="audio/mpeg">
+                            <p>Votre navigateur ne prend pas en charge l'audio HTML. Voici un
+                             un <a href="../galeries/sons/batterie.mp3">lien vers le fichier audio</a> pour le 
+                             télécharger.</p>
+                        </audio>
+                        <div class="row justify-content-around pb-3">
+                            <div class="col-50 col-md-25 pb-3 pl-5">
+                                <h6 class="mb-1">Travail effectué sur le morceau</h6>
+                                <p class="pl-5 m-0 legend-sound">Sonorisation</p>
+                            </div>
+                            <div class="col-50 col-md-25 pl-5">
+                                <h6 class="mb-1">Artiste</h6>
+                                <p class="pl-5 m-0 legend-sound">Sebastien</p>
+                            </div>
+                        </div>
+                        <div class="row d-flex justify-content-center pt-3">
+                            <img src="../tools/ligne_blanche.png" alt=" " class="div-bar">
+                        </div>
+                    </div>
+                    <div class="col-50 pb-4 content-to-sort sonorisation">
+                        <figure class="row justify-content-between mb-1 pr-5">
+                            <figcaption class="text-left pb-2">Lorem ipsum:</figcaption>
+                            <p class="text-right mb-0 pt-3">10/02/2017</p>
+                        </figure>
+                        <audio controls class="col-50 mb-2">
+                            <source src="../galeries/sons/batterie.mp3" type="audio/mpeg">
+                            <p>Votre navigateur ne prend pas en charge l'audio HTML. Voici un
+                             un <a href="../galeries/sons/batterie.mp3">lien vers le fichier audio</a> pour le 
+                             télécharger.</p>
+                        </audio>
+                        <div class="row justify-content-around pb-3">
+                            <div class="col-50 col-md-25 pb-3 pl-5">
+                                <h6 class="mb-1">Travail effectué sur le morceau</h6>
+                                <p class="pl-5 m-0 legend-sound">Sonorisation</p>
+                            </div>
+                            <div class="col-50 col-md-25 pl-5">
+                                <h6 class="mb-1">Artiste</h6>
+                                <p class="pl-5 m-0 legend-sound">Sebastien</p>
+                            </div>
+                        </div>
+                        <div class="row d-flex justify-content-center pt-3">
+                            <img src="../tools/ligne_blanche.png" alt=" " class="div-bar">
+                        </div>
+                    </div>
+                    <div class="col-50 pb-4 content-to-sort sonorisation enregistrement">
+                        <figure class="row justify-content-between mb-1 pr-5">
+                            <figcaption class="text-left pb-2">Lorem ipsum:</figcaption>
+                            <p class="text-right mb-0 pt-3">10/02/2017</p>
+                        </figure>
+                        <audio controls class="col-50 mb-2">
+                            <source src="../galeries/sons/batterie.mp3" type="audio/mpeg">
+                            <p>Votre navigateur ne prend pas en charge l'audio HTML. Voici un
+                             un <a href="../galeries/sons/batterie.mp3">lien vers le fichier audio</a> pour le 
+                             télécharger.</p>
+                        </audio>
+                        <div class="row justify-content-around pb-3">
+                            <div class="col-50 col-md-25 pb-3 pl-5">
+                                <h6 class="mb-1">Travail effectué sur le morceau</h6>
+                                <p class="pl-5 m-0 legend-sound">Sonorisation / Enregistrements</p>
+                            </div>
+                            <div class="col-50 col-md-25 pl-5">
+                                <h6 class="mb-1">Artiste</h6>
+                                <p class="pl-5 m-0 legend-sound">Sebastien</p>
+                            </div>
+                        </div>
+                        <div class="row d-flex justify-content-center pt-3">
+                            <img src="../tools/ligne_blanche.png" alt=" " class="div-bar">
+                        </div>
+                    </div>
+                    <div class="col-50 pb-4 content-to-sort enregistrement">
+                        <figure class="row justify-content-between mb-1 pr-5">
+                            <figcaption class="text-left pb-2">Lorem ipsum:</figcaption>
+                            <p class="text-right mb-0 pt-3">10/02/2017</p>
+                        </figure>
+                        <audio controls class="col-50 mb-2">
+                            <source src="../galeries/sons/batterie.mp3" type="audio/mpeg">
+                            <p>Votre navigateur ne prend pas en charge l'audio HTML. Voici un
+                             un <a href="../galeries/sons/batterie.mp3">lien vers le fichier audio</a> pour le 
+                             télécharger.</p>
+                        </audio>
+                        <div class="row justify-content-around pb-3">
+                            <div class="col-50 col-md-25 pb-3 pl-5">
+                                <h6 class="mb-1">Travail effectué sur le morceau</h6>
+                                <p class="pl-5 m-0 legend-sound">Enregistrements</p>
+                            </div>
+                            <div class="col-50 col-md-25 pl-5">
+                                <h6 class="mb-1">Artiste</h6>
+                                <p class="pl-5 m-0 legend-sound">Sebastien</p>
+                            </div>
+                        </div>
+                        <div class="row d-flex justify-content-center pt-3">
+                            <img src="../tools/ligne_blanche.png" alt=" " class="div-bar">
+                        </div>
+                    </div>
+                    <div class="col-50 pb-4 content-to-sort postproduction">
+                        <figure class="row justify-content-between mb-1 pr-5">
+                            <figcaption class="text-left pb-2">Lorem ipsum:</figcaption>
+                            <p class="text-right mb-0 pt-3">10/02/2017</p>
+                        </figure>
+                        <audio controls class="col-50 mb-2">
+                            <source src="../galeries/sons/batterie.mp3" type="audio/mpeg">
+                            <p>Votre navigateur ne prend pas en charge l'audio HTML. Voici un
+                             un <a href="../galeries/sons/batterie.mp3">lien vers le fichier audio</a> pour le 
+                             télécharger.</p>
+                        </audio>
+                        <div class="row justify-content-around pb-3">
+                            <div class="col-50 col-md-25 pb-3 pl-5">
+                                <h6 class="mb-1">Travail effectué sur le morceau</h6>
+                                <p class="pl-5 m-0 legend-sound">Post-production</p>
+                            </div>
+                            <div class="col-50 col-md-25 pl-5">
+                                <h6 class="mb-1">Artiste</h6>
+                                <p class="pl-5 m-0 legend-sound">Sebastien</p>
+                            </div>
+                        </div>
+                        <div class="row d-flex justify-content-center pt-3">
+                            <img src="../tools/ligne_blanche.png" alt=" " class="div-bar">
+                        </div>
+                    </div>
+                    <!-- fin de la galerie -->
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    
+    <footer>
+        <div class="container text-left">
+            <div class="row justify-content-around">
+                <div class="col-sm mb-1">
+                    <h3 class="mt-4">Services</h3>
+                    <ul>
+                        <li><a href="sonorisation.html">Sonorisation</a></li>
+                        <li><a href="enregistrement.html">Enregistrements</a></li>
+                        <li><a href="arrangement_postproduction.html">Arrangements / Postproduction</a></li>
+                        <li><a href="etudes_acoustiques.html">Études acoustiques / design sonore</a></li>
+                        <li><a href="formation.html">Formations</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm mb-1">
+                    <h3 class="mt-4">Galerie</h3>
+                    <ul>
+                        <li><a href="galerie_photos_videos.html">Photos / vidéos</a></li>
+                        <li><a href="#">Sons</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm mb-1">
+                    <h3 class="mt-4">Contact</h3>
+                    <ul>
+                        <li><a href="contact.php">Formulaire</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm mb-1">
+                    <h3 class="mt-4">Utiles</h3>
+                    <ul>
+                        <li><a href="../index.html">Accueil</a></li>
+                        <li><a href="plan_du_site.html">Plan du site</a></li>
+                        <li><a href="mentions_legales.html">Mentions légales</a></li>
+                    </ul>
+                </div>
+                <div class="row col-sm mb-4 align-items-center">
+                    <a class="languageChoiceText ml-2 pt-2" href="../en/sounds_gallery.html"><img src="../images/en_flag.png" width="40" height="40" alt=" " class="mr-2">English version</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script type="text/javascript" src="../sortModule/script_sort.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>

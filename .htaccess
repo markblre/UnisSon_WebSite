@@ -1,0 +1,4 @@
+AuthName "Entrez vos identifiants pour accèder au site"
+AuthType Basic
+AuthUserFile "/home/uniszxmu/public_html/.htpasswd"
+Require valid-user

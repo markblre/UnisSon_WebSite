@@ -1,0 +1,19 @@
+li {
+    list-style-type: none;
+    font-size: 1.2em;
+}
+
+main a {
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+h1, h2 {
+    text-decoration: underline;
+}

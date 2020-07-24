@@ -1,0 +1,37 @@
+#contact-info-block {
+    border: 5px solid;
+    border-color: black;
+}
+
+#contact-info-block p{
+    color: black;
+}
+
+.div-bar {
+    width: 60%;
+    height: 2px;
+}
+
+.pb-info-contact {
+    padding-bottom: 9em;
+}
+
+.form-group label,
+.form-group small{
+    color: white;
+}
+
+.bg-logoNB {
+    background-image: url(../images/logo/logoNB.svg);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 30em;
+    padding-top: 0.5em;
+    padding-bottom: 3.1em;
+    background-position: top 57px right 15%;
+}
+
+.message-php {
+    color: red;
+    font-weight: bold;
+}

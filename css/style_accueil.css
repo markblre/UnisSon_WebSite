@@ -1,0 +1,17 @@
+.bg-logoNB {
+    background-image: url(../images/logo/logoNB.svg);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 20em;
+    padding-top: 0.5em;
+    padding-bottom: 3.1em;
+    background-position: top 25px right 18%;
+}
+
+#carouselServices {
+    background-color: black;
+}
+
+/* Add class to Bootstrap */
+.mt-6 {
+  margin-top: 5rem !important; }

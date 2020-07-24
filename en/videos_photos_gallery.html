@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css2?family=Squada+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Balthazar&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    
+    <link href="../dist/app.css" rel="stylesheet">
+    
+    <link href="../css/style.css" rel="stylesheet" type="text/css">
+    <link href="../sortModule/style_sort.css" rel="stylesheet" type="text/css">
+    <link href="../css/style_galerie_images.css" rel="stylesheet" type="text/css">
+
+    <title>Photos / Vidéos - Unis-son (FR)</title>
+    <meta name="description" content="Découvrez sur cette page des photos et vidéos de réalisations précédentes de l'entreprise Unis-son." />
+</head>
+
+<body>
+    <nav class="row mr-0">
+        <a class="col-xl-4 col-lg-5 col-md-7 col-sm-9 col-13 text-center pr-0" href="#">
+            <img src="../images/logo/logo.svg" width="75" height="75" alt="logo" class="logo">
+        </a>
+        <div class="navbar navbar-expand-lg bg-primary col-xl-46 col-lg-45 col-md-43 col-sm-41 col-37">
+            <div></div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sonorisation.html">Events sonorisation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="recording.html">Recordings</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="arrangement_postproduction.html">Arrangements / Postproduction</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="acoustic_studies.html">Acoustic studies / sound design</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="formations.html">Formations</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Galleries
+                        </a>
+                        <div class="dropdown-menu bg-primary" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item active" href="#">Photos / Videos</a>
+                            <a class="dropdown-item" href="sounds_gallery.html">Sounds</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.php">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+
+    <main class="main">
+        <div class="container text-center mb-3">
+            <h1 class="mt-4">Gallery - Photos / Videos</h1>
+            <p class="mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin id feugiat turpis, sit amet mattis justo. Phasellus nec nulla id nibh tristique elementum sit amet ac nunc. Cras lacinia mollis odio quis rhoncus. Sed ligula eros, pretium non justo vel, ullamcorper venenatis urna. Vivamus eget ultricies neque. Ut placerat lorem quis efficitur auctor. Vivamus in molestie neque, ut lacinia lectus.</p>
+        </div>
+        
+        <div class="bg-black pt-3">
+            <div class="container">
+                <h6 class="filter mb-3">Filters :</h6>
+                <div id="myBtnContainer" class="mb-5 mr-1 ml-1 d-flex justify-content-around row">
+                    <button class="btnSort col-lg-7 mb-3 btn-light btn-lg shadow-lg rounded-pill filterActive" onclick="filterSelection('all')">View all</button>
+                    <button class="btnSort col-lg-8 mb-3 btn-light btn-lg shadow-lg rounded-pill" onclick="filterSelection('sonorisation')">Sonorisation</button>
+                    <button class="btnSort col-lg-10 mb-3 btn-light btn-lg shadow-lg rounded-pill" onclick="filterSelection('enregistrement')">Recording</button>
+                    <button class="btnSort col-lg-11 mb-3 btn-light btn-lg shadow-lg rounded-pill" onclick="filterSelection('arrangement')">Arrangement</button>
+                    <button class="btnSort col-lg-11 mb-3 btn-light btn-lg shadow-lg rounded-pill" onclick="filterSelection('postproduction')">Postproduction</button>
+                    <button class="btnSort col-lg-11 mb-3 btn-light btn-lg shadow-lg rounded-pill" onclick="filterSelection('photo')">Photos</button>
+                    <button class="btnSort col-lg-11 mb-3 btn-light btn-lg shadow-lg rounded-pill" onclick="filterSelection('video')">Videos</button>
+                </div>
+
+                <div class="row justify-content-around">
+
+                    <!-- début de la galerie -->
+
+                    <!-- Préfab image
+
+                    <div class="col-md-16 col-40 content-to-sort border pl-3 pr-3 pt-2 mb-3 photo sonorisation enregistrement arrangement postproduction">
+                        <img src="../galeries/Photo_video/ " class="img-size-resp mb-3">
+                        <h3 class="pb-2">Lorem ipsum</h3>
+                        <p class="pl-3 pr-3 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tempor interdum efficitur. Nam vel vehicula lorem. Pellentesque aliquet eget quam et mattis. Duis finibus aliquet dui ut egestas. Cras pretium.</p>
+                    </div>
+                    -->
+
+                    <!-- Préfab vidéo
+
+                    <div class="col-md-16 col-40 content-to-sort border pl-3 pr-3 pt-2 mb-3 video sonorisation enregistrement arrangement postproduction">
+                        <video controls class="video-size-resp mb-3">
+                            <source src="../galeries/Photo_video/ .webm" type="video/webm">
+                            <source src="../galeries/Photo_video/ .mp4" type="video/mp4">
+                            <p>Your browser does not support HTML5 videos. Here is <a href="../galeries/Photo_video/ .mp4">a link to download the video</a>.</p>
+                        </video>
+                        <h3 class="pb-2">Lorem ipsum</h3>
+                        <p class="pl-3 pr-3 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tempor interdum efficitur. Nam vel vehicula lorem. Pellentesque aliquet eget quam et mattis. Duis finibus aliquet dui ut egestas. Cras pretium.</p>
+                    </div>
+                    -->
+
+                    <div class="col-md-16 col-40 content-to-sort border pl-3 pr-3 pt-2 mb-3 photo sonorisation enregistrement postproduction">
+                        <img src="../galeries/Photo_video/table.jpg" class="img-size-resp mb-3">
+                        <h3 class="pb-2">Lorem ipsum</h3>
+                        <p class="pl-3 pr-3 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tempor interdum efficitur. Nam vel vehicula lorem. Pellentesque aliquet eget quam et mattis. Duis finibus aliquet dui ut egestas. Cras pretium.</p>
+                    </div>
+                    <div class="col-md-16 col-40 content-to-sort border pl-3 pr-3 pt-2 mb-3 photo sonorisation enregistrement postproduction">
+                        <img src="../galeries/Photo_video/enceinte.jpg" class="img-size-resp mb-3">
+                        <h3 class="pb-2">Lorem ipsum</h3>
+                        <p class="pl-3 pr-3 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tempor interdum efficitur. Nam vel vehicula lorem. Pellentesque aliquet eget quam et mattis. Duis finibus aliquet dui ut egestas. Cras pretium.</p>
+                    </div>
+                    <div class="col-md-16 col-40 content-to-sort border pl-3 pr-3 pt-2 mb-3 photo sonorisation enregistrement postproduction">
+                        <img src="../galeries/Photo_video/studio.jpg" class="img-size-resp mb-3">
+                        <h3 class="pb-2">Lorem ipsum</h3>
+                        <p class="pl-3 pr-3 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tempor interdum efficitur. Nam vel vehicula lorem. Pellentesque aliquet eget quam et mattis. Duis finibus aliquet dui ut egestas. Cras pretium.</p>
+                    </div>
+                    <div class="col-md-16 col-40 content-to-sort border pl-3 pr-3 pt-2 mb-3 photo sonorisation enregistrement postproduction">
+                        <img src="../galeries/Photo_video/studio-2.jpg" class="img-size-resp mb-3">
+                        <h3 class="pb-2">Lorem ipsum</h3>
+                        <p class="pl-3 pr-3 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tempor interdum efficitur. Nam vel vehicula lorem. Pellentesque aliquet eget quam et mattis. Duis finibus aliquet dui ut egestas. Cras pretium.</p>
+                    </div>
+                    <div class="col-md-16 col-40 content-to-sort border pl-3 pr-3 pt-2 mb-3 photo sonorisation enregistrement postproduction">
+                        <img src="../galeries/Photo_video/cable.jpg" class="img-size-resp mb-3">
+                        <h3 class="pb-2">Lorem ipsum</h3>
+                        <p class="pl-3 pr-3 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tempor interdum efficitur. Nam vel vehicula lorem. Pellentesque aliquet eget quam et mattis. Duis finibus aliquet dui ut egestas. Cras pretium.</p>
+                    </div>
+                    <div class="col-md-16 col-40 content-to-sort border pl-3 pr-3 pt-2 mb-3 photo sonorisation enregistrement">
+                        <img src="../galeries/Photo_video/preparation-concert.jpg" class="img-size-resp mb-3">
+                        <h3 class="pb-2">Lorem ipsum</h3>
+                        <p class="pl-3 pr-3 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tempor interdum efficitur. Nam vel vehicula lorem. Pellentesque aliquet eget quam et mattis. Duis finibus aliquet dui ut egestas. Cras pretium.</p>
+                    </div>
+                    <div class="col-md-16 col-40 content-to-sort border pl-3 pr-3 pt-2 mb-3 photo sonorisation enregistrement">
+                        <img src="../galeries/Photo_video/orchestre.jpg" class="img-size-resp mb-3">
+                        <h3 class="pb-2">Lorem ipsum</h3>
+                        <p class="pl-3 pr-3 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tempor interdum efficitur. Nam vel vehicula lorem. Pellentesque aliquet eget quam et mattis. Duis finibus aliquet dui ut egestas. Cras pretium.</p>
+                    </div>
+                    <div class="col-md-16 col-40 content-to-sort border pl-3 pr-3 pt-2 mb-3 photo sonorisation enregistrement">
+                        <img src="../galeries/Photo_video/orchestre-regis.jpg" class="img-size-resp mb-3">
+                        <h3 class="pb-2">Lorem ipsum</h3>
+                        <p class="pl-3 pr-3 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tempor interdum efficitur. Nam vel vehicula lorem. Pellentesque aliquet eget quam et mattis. Duis finibus aliquet dui ut egestas. Cras pretium.</p>
+                    </div>
+                    <div class="col-md-16 col-40 content-to-sort border pl-3 pr-3 pt-2 mb-3 photo sonorisation enregistrement">
+                        <img src="../galeries/Photo_video/concert-regis.jpg" class="img-size-resp mb-3">
+                        <h3 class="pb-2">Lorem ipsum</h3>
+                        <p class="pl-3 pr-3 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tempor interdum efficitur. Nam vel vehicula lorem. Pellentesque aliquet eget quam et mattis. Duis finibus aliquet dui ut egestas. Cras pretium.</p>
+                    </div>
+                    <div class="col-md-16 col-40 content-to-sort border pl-3 pr-3 pt-2 mb-3 photo sonorisation enregistrement">
+                        <img src="../galeries/Photo_video/concert-regis-2.jpg" class="img-size-resp mb-3">
+                        <h3 class="pb-2">Lorem ipsum</h3>
+                        <p class="pl-3 pr-3 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tempor interdum efficitur. Nam vel vehicula lorem. Pellentesque aliquet eget quam et mattis. Duis finibus aliquet dui ut egestas. Cras pretium.</p>
+                    </div>
+                    <div class="col-md-16 col-40 content-to-sort border pl-3 pr-3 pt-2 mb-3 video sonorisation enregistrement">
+                        <video controls class="video-size-resp mb-3 border">
+                            <source src="../galeries/Photo_video/orchestre.webm" type="video/webm">
+                            <source src="../galeries/Photo_video/orchestre.mp4" type="video/mp4">
+                            <p>Votre navigateur ne prend pas en charge les vidéos HTML5.
+                            Voici <a href="../galeries/Photo_video/orchestre.mp4">un lien pour télécharger la vidéo</a>.</p>
+                        </video>
+                        <h3 class="pb-2">Lorem ipsum</h3>
+                        <p class="pl-3 pr-3 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tempor interdum efficitur. Nam vel vehicula lorem. Pellentesque aliquet eget quam et mattis. Duis finibus aliquet dui ut egestas. Cras pretium.</p>
+                    </div>
+                    <div class="col-md-16 col-40 content-to-sort border pl-3 pr-3 pt-2 mb-3 photo sonorisation enregistrement">
+                        <img src="../galeries/Photo_video/orchestre-2.jpg" class="img-size-resp mb-3">
+                        <h3 class="pb-2">Lorem ipsum</h3>
+                        <p class="pl-3 pr-3 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tempor interdum efficitur. Nam vel vehicula lorem. Pellentesque aliquet eget quam et mattis. Duis finibus aliquet dui ut egestas. Cras pretium.</p>
+                    </div>
+                    <div class="col-md-16 col-40 content-to-sort border pl-3 pr-3 pt-2 mb-3 photo enregistrement">
+                        <img src="../galeries/Photo_video/batteur.jpg" class="img-size-resp mb-3">
+                        <h3 class="pb-2">Lorem ipsum</h3>
+                        <p class="pl-3 pr-3 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tempor interdum efficitur. Nam vel vehicula lorem. Pellentesque aliquet eget quam et mattis. Duis finibus aliquet dui ut egestas. Cras pretium.</p>
+                    </div>
+                    <div class="col-md-16 col-40 content-to-sort border pl-3 pr-3 pt-2 mb-3 video enregistrement">
+                        <video controls class="video-size-resp mb-3">
+                            <source src="../galeries/Photo_video/batterie.webm" type="video/webm">
+                            <source src="../galeries/Photo_video/batterie.mp4" type="video/mp4">
+                            <p>Your browser does not support HTML5 videos. Here is <a href="../galeries/Photo_video/batterie.mp4">a link to download the video</a>.</p>
+                        </video>
+                        <h3 class="pb-2">Lorem ipsum</h3>
+                        <p class="pl-3 pr-3 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tempor interdum efficitur. Nam vel vehicula lorem. Pellentesque aliquet eget quam et mattis. Duis finibus aliquet dui ut egestas. Cras pretium.</p>
+                    </div>
+                    <div class="col-md-16 col-40 content-to-sort border pl-3 pr-3 pt-2 mb-3 video enregistrement">
+                        <video controls class="video-size-resp mb-3">
+                            <source src="../galeries/Photo_video/harpe.webm" type="video/webm">
+                            <source src="../galeries/Photo_video/harpe.mp4" type="video/mp4">
+                            <p>Your browser does not support HTML5 videos. Here is <a href="../galeries/Photo_video/harpe.mp4">a link to download the video</a>.</p>
+                        </video>
+                        <h3 class="pb-2">Lorem ipsum</h3>
+                        <p class="pl-3 pr-3 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tempor interdum efficitur. Nam vel vehicula lorem. Pellentesque aliquet eget quam et mattis. Duis finibus aliquet dui ut egestas. Cras pretium.</p>
+                    </div>
+                    <div class="col-md-16 col-40 content-to-sort border pl-3 pr-3 pt-2 mb-3 video enregistrement">
+                        <video controls class="video-size-resp mb-3">
+                            <source src="../galeries/Photo_video/harpe-2.webm" type="video/webm">
+                            <source src="../galeries/Photo_video/harpe-2.mp4" type="video/mp4">
+                            <p>Your browser does not support HTML5 videos. Here is <a href="../galeries/Photo_video/harpe-2.mp4">a link to download the video</a>.</p>
+                        </video>
+                        <h3 class="pb-2">Lorem ipsum</h3>
+                        <p class="pl-3 pr-3 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tempor interdum efficitur. Nam vel vehicula lorem. Pellentesque aliquet eget quam et mattis. Duis finibus aliquet dui ut egestas. Cras pretium.</p>
+                    </div>
+                    <!-- fin de la galerie -->
+
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    
+    <footer>
+        <div class="container text-left">
+            <div class="row justify-content-around">
+                <div class="col-sm mb-1">
+                    <h3 class="mt-4">Services</h3>
+                    <ul>
+                        <li><a href="sonorisation.html">Sonorisation</a></li>
+                        <li><a href="recording.html">Recordings</a></li>
+                        <li><a href="arrangement_postproduction.html">Arrangements / Postproduction</a></li>
+                        <li><a href="acoustic_studies.html">Acoustic studies / sound design</a></li>
+                        <li><a href="formations.html">Formations</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm mb-1">
+                    <h3 class="mt-4">Galleries</h3>
+                    <ul>
+                        <li><a href="#">Photos / videos</a></li>
+                        <li><a href="sounds_gallery.html">Sounds</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm mb-1">
+                    <h3 class="mt-4">Contact</h3>
+                    <ul>
+                        <li><a href="contact.php">Form</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm mb-1">
+                    <h3 class="mt-4">Useful</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="website_map.html">Website map</a></li>
+                        <li><a href="legal_disclaimer.html">Legal disclaimer</a></li>
+                    </ul>
+                </div>
+                <div class="row col-sm mb-4 align-items-center">
+                    <a class="languageChoiceText ml-2 pt-2" href="../fr/galerie_photos_videos.html"><img src="../images/fr_flag.png" width="40" height="40" alt=" " class="mr-2">Version française</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script type="text/javascript" src="../sortModule/script_sort.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
