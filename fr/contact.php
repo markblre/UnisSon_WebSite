@@ -112,13 +112,13 @@
                             <label for="message">Message</label>
                             <textarea class="form-control" name="message" id="message" rows="3" required></textarea>
                         </div>
-                        <div class="g-recaptcha" data-sitekey="6Lf4KOgUAAAAABh5kwJwdW9DX48zQLs-6jdx4G8y"></div>
+                        <div class="g-recaptcha" data-sitekey=""></div>
                             <script src="https://www.google.com/recaptcha/api.js" async defer></script>
                         <button type="submit" class="btn btn-light btn-lg shadow-lg rounded-pill mt-3">Envoyer</button>
                         <div class="message-php mt-2 ml-3"><?php
                             require_once "../ReCaptcha/autoload.php";
                             if(isset($_POST["name"]) && isset($_POST["email"]) && isset($_POST["subject"]) && isset($_POST["message"])){
-                                    $recaptcha = new \ReCaptcha\ReCaptcha("6Lf4KOgUAAAAAHajIh0vhZpJCInWPN8FLKN23GjW");
+                                    $recaptcha = new \ReCaptcha\ReCaptcha("");
                                     $resp = $recaptcha->verify($_POST["g-recaptcha-response"]);
                                 if ($resp->isSuccess()) {
                                     $headers = 'From: ' . $_POST["email"] . "\r\n";
