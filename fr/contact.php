@@ -20,6 +20,7 @@
 </head>
 
 <body>
+    <header>/!\ Site non officiel /!\</header>
     <nav class="row mr-0">
         <a class="col-xl-4 col-lg-5 col-md-7 col-sm-9 col-13 text-center pr-0" href="../index.html">
             <img src="../images/logo/logo.svg" width="75" height="75" alt="logo" class="logo">
@@ -121,7 +122,7 @@
                                     $resp = $recaptcha->verify($_POST["g-recaptcha-response"]);
                                 if ($resp->isSuccess()) {
                                     $headers = 'From: ' . $_POST["email"] . "\r\n";
-                                    mail("mark.b@unis-son.yj.fr", $_POST["subject"], $_POST["message"], $headers);
+                                    mail("", $_POST["subject"], $_POST["message"], $headers);
                                     echo "Message envoyé! Merci de votre visite.";
                                 } else {
                                     echo "Captcha invalide";
@@ -132,7 +133,7 @@
                 </div>
                 <div class="order-2 order-sm-2 order-md-1 col-35 col-sm-40 col-md-25 col-lg-18 col-xl-16 mb-5 bg-white" id="contact-info-block">
                     <h5 class="pt-5 text-center">ADRESSE</h5>
-                    <p class="pt-4">Le Tremblay, Saint-Felix (03260), France</p>
+                    <p class="pt-4">....................................</p>
                     <div class="row d-flex justify-content-center pt-5">
                         <img src="../tools/ligne_noir.png" alt=" " class="div-bar">
                     </div>
